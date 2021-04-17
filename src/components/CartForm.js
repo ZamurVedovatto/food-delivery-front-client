@@ -24,7 +24,7 @@ export default function CartForm() {
 
 	return (
 		<>
-			<div className="cartTitle">Your contact data</div>
+			<div className="cartTitle">Informações Adicionais</div>
 			<div className="cartFormContainer">
 				<Formik
 					initialValues={

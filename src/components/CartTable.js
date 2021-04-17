@@ -16,7 +16,8 @@ export default function CartTable() {
 				id: '368d575c-f0ed-11e9-a713-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '10.99'
+			price: '10.99',
+			qty: 1
 		},
 		{
 			title: 'Mix of 23 sushi',
@@ -25,7 +26,8 @@ export default function CartTable() {
 				id: '56945ecc-f0ef-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '15'
+			price: '15',
+			qty: 2
 		}
 	])
 
@@ -60,15 +62,15 @@ export default function CartTable() {
 					let total = price * item.qty;
 
 					return (
-						<div className="cart-prod">
+						<div key={item.title} className="cart-prod">
 							<div className="cart-prod-img-cont">
 								<img className="cart-prod-img" src={item.image.filename} />
 							</div>
 							<div className="cart-prod-det">
-							<div className="cart-prod-head">{item.title}</div>
-							<p className="cart-prod-desc">{item.description}</p>
+								<div className="cart-prod-head">{item.title}</div>
+								<p className="cart-prod-desc">{item.description}</p>
 							</div>
-							<div className="cart-prod-prc">${displayCurrency(price)}</div>
+							<div className="cart-prod-prc">R${displayCurrency(price)}</div>
 							<div className="cart-prod-mul">x</div>
 							<div className="cart-prod-qty">
 								<input type="text" value={item.qty} />
@@ -80,20 +82,20 @@ export default function CartTable() {
 										<button className="remove-cart-prod" onClick={() => {
 											handleDelete(item.product_id)
 										}}>
-											Remove
+											Remover
 										</button>
 									)
 							}
 							</div>
 							<div className="cart-prod-prc-spacer" />
-							<div className="cart-prod-line-prc">${displayCurrency(total)}</div>
+							<div className="cart-prod-line-prc">R${displayCurrency(total)}</div>
 						</div>
 					);
 				})
 			}
 			<div className="cart-prod">
 				<div className="cart-total">TOTAL</div>
-				<div className="cart-prod-line-prc">${displayCurrency(cartTotal.totalPrice)}</div>
+				<div className="cart-prod-line-prc">R${displayCurrency(cartTotal.totalPrice)}</div>
 			</div>
 		</>
 	)

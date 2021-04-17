@@ -2,19 +2,17 @@ import React from 'react'
 import Logo from './Logo'
 
 export default function Footer() {
+	const year = new Date().getFullYear()
 	return (
 		<footer>
 			<div className="container">
 				<div className="footer_inside">
 					<div className="copyright">
-						<Logo />
-						<div className="year">© 2019</div>
+						{/* <Logo /> */}
+						<div className="year">fooddelivery © {year}</div>
 					</div>
 					<div className="contacts">
-						<p>1066 Kiely Blvd</p>
-						<p>Santa Clara, CA 95051</p>
-						<p>+1 408-246-0025</p>
-						<p>sales@shop.com</p>
+						<p>fooddelivery@gmail.com</p>
 					</div>
 				</div>
 			</div>

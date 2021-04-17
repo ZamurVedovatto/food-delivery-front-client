@@ -29,6 +29,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100vw;
+	min-height: 100vh;
 }
 
 .header_shadow {
@@ -46,9 +47,9 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
+	width: 100%;
+	max-width: 1400px;
+	display: flex;
 }
 
 header {
@@ -180,33 +181,34 @@ header {
 // }
 
 footer {
-	height: 200px;
 	width: 100vw;
-	background-color: #eef1f8;
-	margin-top: 100px;
+	margin-top: 125px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 .year {
-	margin-top: 20px;
+	color: red;
+	letter-spacing: 2px;
+	line-height: 1;
 }
 
 .footer_inside {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 }
 
 .copyright {
-	margin-left: 30px;
 }
 
 .contacts {
-	margin-right: 30px;
+	color: dimgrey;
 }
 
 .cartBadge {
@@ -234,6 +236,7 @@ footer {
 	justify-content: center;
 	padding-left: 20px;
 	padding-right: 20px;
+	min-height: 60vh;
 }
 
 .cartContainer {
@@ -251,9 +254,9 @@ footer {
 
 .cartTitle {
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-size: 30px;
-	font-weight: 700;
+	// font-weight: 700;
 }
 
 .emptyCartContainer {
@@ -466,8 +469,8 @@ input:focus, textarea:focus {
 
   .cart-prod-img-cont {
 	flex-shrink: 0;
-    width: 100px;
-    height: 100px;
+	width: 100px;
+	// height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -481,8 +484,8 @@ input:focus, textarea:focus {
   }
 
   .cart-prod-det {
-	padding-left: 20px;
-	flex-grow: 1;
+		padding-left: 20px;
+		flex-grow: 1;
   }
 
   .cart-total {
@@ -537,6 +540,7 @@ input:focus, textarea:focus {
 	  color: #fff;
 	  font-size: 12px;
 	  border-radius: 3px;
+		margin-right: 1rem;
 	}
 
 	.remove-cart-prod:hover {

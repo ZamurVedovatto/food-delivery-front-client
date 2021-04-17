@@ -16,8 +16,8 @@ export default function Cart() {
 
 	return (
 		<>
-			<img className="emptyCartImg" src={shoppingCartImg} />
-			<div className="cartTitle">Your shopping cart</div>
+			{/* <img className="emptyCartImg" src={shoppingCartImg} /> */}
+			{/* <div className="cartTitle">Meu Carrinho</div> */}
 			<div className="cartContainer">
 				<CartTable disableDelete={checkout}/>
 				{
