@@ -1,23 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import shoppingCartImg from './../assets/img/shopping-cart.svg'
+import CartForm from './CartForm';
+import CartTable from './CartTable';
 
 export default function Cart() {
+	const [checkout, setCheckout] = useState(false)
+
+	const handleCheckout = () => {
+		setCheckout(true)
+	};
+
+	const handleCancel = () => {
+		setCheckout(false)
+	};
+
 	return (
 		<>
 			<img className="emptyCartImg" src={shoppingCartImg} />
 			<div className="cartTitle">Your shopping cart</div>
 			<div className="cartContainer">
-				<CartTable disableDelete={this.state.checkout}/>
+				<CartTable disableDelete={checkout}/>
 				{
-					!this.state.checkout &&
+					!checkout &&
 					(
-						<button className="blueButton checkoutButton" onClick={this.handleCheckout}>Checkout</button>
+						<button className="blueButton checkoutButton" onClick={() => handleCheckout()}>Checkout</button>
 					)
 				}
 			</div>
 			{
-				this.state.checkout &&
-				(<CartForm onCancel={this.handleCancel}/>)
+				checkout &&
+				(<CartForm onCancel={handleCancel}/>)
 			}
 		</>
 	)
