@@ -10,7 +10,7 @@ export default function Products() {
 				id: '368d575c-f0ed-11e9-a713-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '10.99'
+			price: '10,99'
 		},
 		{
 			title: 'Mix of 23 sushi',
@@ -19,7 +19,7 @@ export default function Products() {
 				id: '56945ecc-f0ef-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '15'
+			price: '15,00'
 		},
 		{
 			title: 'Pepperoni and tomato',
@@ -28,7 +28,7 @@ export default function Products() {
 				id: '4bb3a936-f0ef-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '10.5'
+			price: '10,50'
 		},
 		{
 			title: 'Vegan Baguette & Wrap Platter',
@@ -38,7 +38,7 @@ export default function Products() {
 				id: '6951ab9a-f0f0-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '4'
+			price: '4,00'
 		},
 		{
 			title: 'Beef hamburger',
@@ -48,7 +48,7 @@ export default function Products() {
 				id: '3c64aeed-dc9e-4665-b975-88edd2bf66e3',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '3.5'
+			price: '3,50'
 		},
 		{
 			title: 'Chicken hamburger',
@@ -57,7 +57,7 @@ export default function Products() {
 				id: '4bbd0210-f18a-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '2.5'
+			price: '2,50'
 		},
 		{
 			title: 'Chicken wings',
@@ -66,7 +66,7 @@ export default function Products() {
 				id: '740e2e88-f18a-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '3'
+			price: '3,0'
 		},
 		{
 			title: 'Caesar salad',
@@ -76,7 +76,7 @@ export default function Products() {
 				id: '743ae3ee-f18d-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '3.5'
+			price: '3,50'
 		},
 		{
 			title: 'Greece salad',
@@ -85,7 +85,7 @@ export default function Products() {
 				id: '2780dba2-f18e-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '3.25'
+			price: '3,25'
 		},
 		{
 			title: 'Borsch',
@@ -94,7 +94,7 @@ export default function Products() {
 				id: '46de98c0-f18b-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '8'
+			price: '8,00'
 		},
 		{
 			title: 'Tomato soup',
@@ -103,7 +103,7 @@ export default function Products() {
 				id: 'd11a970a-f18b-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '4.5'
+			price: '4,50'
 		},
 		{
 			title: 'Champignon cream soup',
@@ -113,7 +113,7 @@ export default function Products() {
 				id: '864322f0-f18c-11e9-81b4-2a2ae2dbcce4',
 				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
 			},
-			price: '5'
+			price: '5,00'
 		}
 	])
 
