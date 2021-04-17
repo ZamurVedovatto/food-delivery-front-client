@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import 'semantic-ui-css/semantic.min.css';
 @import 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900';
 
 *, :after, :before{
@@ -31,16 +32,17 @@ body {
 }
 
 .header_shadow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    width: 100vw;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-		z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	width: 100vw;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	z-index: 10;
+	padding: 0 2rem;
 }
 
 .container {
@@ -50,14 +52,14 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .logo_link
@@ -80,8 +82,8 @@ header {
 }
 
 .cartIcon {
-  	width: 40px;
-	  height: 40px;
+  	width: 50px;
+	  height: 50px;
 	  background: #eceff6;
 	  border-radius: 50%;
 	  display: flex;
@@ -119,7 +121,7 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     bottom: 0;
-    width: calc(100% - 32px);
+    width: 100%;
     height: 218px;
     padding: 0 16px 10px;
     border-bottom-left-radius: 4px;
@@ -156,22 +158,22 @@ header {
 }
 
 
-.product .bottom .button {
-    background-color: #2566f9;
-    width: 64px;
-    line-height: 36px;
-    padding: 0 16px;
-    border-radius: 4px;
-    vertical-align: baseline;
-    text-align: center;
-    color: #fff;
-    font-family: Roboto, 'Helvetica Neue', sans-serif;
-    margin-top: 8px;
-	  margin-bottom: 20px;
-    font-weight: 800;
-	font-size: 14px;
-	cursor: pointer;
-}
+// .product .bottom .button {
+//     background-color: #2566f9;
+//     width: 64px;
+//     line-height: 36px;
+//     padding: 0 16px;
+//     border-radius: 4px;
+//     vertical-align: baseline;
+//     text-align: center;
+//     color: #fff;
+//     font-family: Roboto, 'Helvetica Neue', sans-serif;
+//     margin-top: 8px;
+// 	  margin-bottom: 20px;
+//     font-weight: 800;
+// 	font-size: 14px;
+// 	cursor: pointer;
+// }
 
 footer {
 	height: 200px;
@@ -206,14 +208,14 @@ footer {
 .cartBadge {
 	position: absolute;
 	top: -2px;
-	right: -3px;
+	right: -9px;
 	border-radius: 50%;
-	background: red;
+	background: #1E70BF;
 	color: white;
-	font-size: 10px;
+	font-size: 1rem;
 	font-weight: bolder;
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;

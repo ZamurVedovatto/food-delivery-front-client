@@ -8,7 +8,7 @@ export default function CartIcon() {
 	return (
 		<Link to="/cart">
 			<div className="cartIcon">
-				<i className="fa fa-shopping-cart" aria-hidden="true"></i>
+				<i className="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
 				{itemsCount > 0 &&
 					<div className="cartBadge">
 						{itemsCount}

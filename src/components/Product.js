@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button, Icon } from 'semantic-ui-react'
 
 export default function Product({ key, productId, image, title, description, price }) {
 
@@ -16,7 +17,12 @@ export default function Product({ key, productId, image, title, description, pri
 					<h1>{title}</h1>
 					<h2>{description}</h2>
 					<div className="price">${price}</div>
-					<div className="button" onClick={() => buy(productId)}>Buy</div>
+					<Button primary animated onClick={() => buy(productId)}>
+						<Button.Content visible>Adicionar</Button.Content>
+						<Button.Content hidden>
+							<Icon name='plus' />
+						</Button.Content>
+					</Button>
 				</div>
 		</div>
 	)
