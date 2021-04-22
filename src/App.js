@@ -19,9 +19,9 @@ function App() {
 			<div className="root">
 				<Header />
 					<Switch>
+						<Route path="/" component={Products} />
 						<Route path="/cart" component={CartPage} />
 						<Route path="/thankYou" component={CartThankYou} />
-						<Route path="/" component={Products} />
 					</Switch>
 				<Footer />
 			</div>
