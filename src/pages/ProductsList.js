@@ -16,11 +16,8 @@ export default function ProductsList({ loading, productsList }) {
 					productsList?.map((item) => (
 						<div key={item.id}>
 							<Product
-								productId={item.id}
-								image={null}
-								title={item.title}
-								description={item.description}
-								price={item.price} />
+								product={item}
+							/>
 						</div>
 					))
 				)

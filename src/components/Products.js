@@ -3,7 +3,11 @@ import React from 'react'
 import ProductsList from '../pages/ProductsList';
 import { FETCH_ACTIVE_PRODUCTS } from '../util/graphql';
 
+import { useSelector } from 'react-redux'
+
 export default function Products() {
+	const state = useSelector((state) => state)
+	console.log("state", state)
 	// const [products, setProducts] = useState([
 	// 	{
 	// 		title: 'Sushi and caviar mix',
@@ -119,7 +123,11 @@ export default function Products() {
 	// 	}
 	// ])
 
-	const {loading, data: { getActiveProducts: productsList } = {}, refetch } = useQuery(FETCH_ACTIVE_PRODUCTS, {})
+	const {loading, data: { getActiveProducts: productsList } = {}, refetch } = useQuery(FETCH_ACTIVE_PRODUCTS, {
+		onCompleted(data) {
+			console.log(data)
+		},
+	})
 
 	return (
 		<ProductsList loading={loading} productsList={productsList} />

@@ -1,18 +1,26 @@
 import React from 'react'
-import { Button, Icon } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import { Image } from 'semantic-ui-react'
+import { useSelector, useDispatch } from 'react-redux'
 
-export default function Product({ productId, image, title, description, price }) {
+export default function Product({product}) {
+	const { title, description, price } = product
+	const state = useSelector((state) => state.cart)
+	const dispatch = useDispatch()
+	console.log("state on product", state)
+
 	const buy = () => {
-		// this.props.addCartItem(this.props.productId);
-		console.log("buy")
+		dispatch({
+			type: "ADD_ITEM_TO_CART",
+			payload: {
+				item: product
+			}
+		})
 	};
 
 	return (
-		// imageUrl = config.apiBaseUrl + 'files/' + this.props.image.id + '/' + this.props.image.filename;
-
 		<div className="product">
-			<Image src={"https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg"} size='large' bordered />
+			<Image src={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Salad_platter.jpg/1200px-Salad_platter.jpg'} size='large' bordered />
 			<div className="bottom">
 				<h1>{title}</h1>
 				<h2>{description}</h2>
@@ -20,7 +28,7 @@ export default function Product({ productId, image, title, description, price })
 				<Button
 					primary
 					negative
-					content='Adicionar' icon='plus' labelPosition='right' onClick={() => buy(productId)} />
+					content='Adicionar' icon='plus' labelPosition='right' onClick={() => buy()} />
 
 				{/* <Button primary animated onClick={() => buy(productId)}>
 					<Button.Content visible>Adicionar</Button.Content>

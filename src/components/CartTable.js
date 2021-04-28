@@ -14,7 +14,7 @@ export default function CartTable() {
 			description: 'Sushi & caviar mix',
 			image: {
 				id: '368d575c-f0ed-11e9-a713-2a2ae2dbcce4',
-				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
+				filename: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Salad_platter.jpg/1200px-Salad_platter.jpg'
 			},
 			price: '10.99',
 			qty: 1
@@ -24,7 +24,7 @@ export default function CartTable() {
 			description: '23 Sushi Mix',
 			image: {
 				id: '56945ecc-f0ef-11e9-81b4-2a2ae2dbcce4',
-				filename: 'https://api.food-delivery.mishast.com/files/2780dba2-f18e-11e9-81b4-2a2ae2dbcce4/greece_salad.jpg'
+				filename: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Salad_platter.jpg/1200px-Salad_platter.jpg'
 			},
 			price: '15',
 			qty: 2
